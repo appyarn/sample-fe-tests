@@ -9,13 +9,14 @@ module.exports = {
      .click("body > div.custom-popup.popup-alert.opened > div.cp__inner > div > div > div > div.close-popup.close-popup-js > div")
      
        .maximizeWindow()
-       .pause(2*1000)
-    .click("body > div.header.header-fixed.mtHeader.visible > ul")
- 
-    .click("body > div.header.header-fixed.mtHeader.visible > ul > li:nth-child(1)")
-     .click("body > div.header.header-fixed.mtHeader.visible > ul > li:nth-child(1) > a")
-     
-     .end();
+    
+   
+
+.assert.visible("#intSFader-1 > div.slide-description > h2",'Verify:Collabortaion is visible')
+
+.assert.visible("body > div.custom-carousel-slider > div.cms-description > div > h2",'Verify text: A JOYFUL LOVE OF LEARNING is present') 
+
+.end();
  },
 
 
